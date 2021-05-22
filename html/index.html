@@ -4,38 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Document</title> 
   </head>
   <body>
-    <h1 class="title">Hello world</h1>
+    <h1 id="title">Hello world</h1>
+
+    <p class="para-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nam. Suscipit repellendus voluptatum sunt ad voluptas, cupiditate quasi magnam, cum accusamus obcaecati ipsam dicta. Nisi voluptate necessitatibus laboriosam perspiciatis laborum!</p>
 
     <a href="https://www.google.fr" id="google-link">le site de google</a>
 
-    <p>
+    <p class="para-text">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quas rem
       placeat ut corporis eaque voluptatem mollitia, ab saepe eius consectetur
       laudantium dicta nulla expedita magnam voluptatibus, natus quaerat.
       Provident.
       <ul>
-        <li>element 1</li>
+        <li class="list-inline">element 1</li>
           <ol>
-            <li>a list in a list</li>
+            <li class="list-inline">a list in a list</li>
           </ol>
         </li>
         <li>element 3 anas</li>
       </ul>
     </p>
-    <h2 class="subtitle article-subtitle" id="about-me">About me</h2>
+    <h2 class="subtitle">About me</h2>
     <img src="../../../random_image/space.jpg" alt="space" />
     <ul>
       <li>List with one child</li>
     </ul>
   </p>
   <h2 class="subtitle" >UN sous titre</h2>
-  <h2 class="services subtitle">Services</h2>
-  <a href="https://www.google.com">projet perso</a>
-  <a href="https://www.google.com">projet perso</a>
-    <p>
+  <h2 class="subtitle">Services</h2>
+  <a href="https://www.google.com" class="link">projet perso</a>
+  <a href="https://www.google.com" class="link">projet perso</a>
+    <p class="para-text">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
       laboriosam suscipit! Vel impedit laboriosam sapiente magnam facere earum
       quam explicabo pariatur aliquam eaque! Excepturi mollitia ad autem minus
@@ -43,7 +45,8 @@
     </p>
     <h2 id="contact-us subtitle">Contact us</h2>
     <form>
-      <input type="email" placeholder="Email">
+      <input class="form-input" type="text" placeholder="Full name">
+      <input class="form-input" type="email" placeholder="Email">
       <textarea></textarea>
       <button>Submit</button>
     </form>

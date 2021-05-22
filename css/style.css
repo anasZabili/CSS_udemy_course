@@ -1,7 +1,7 @@
-h1 {
-  color: #ff0000;
+#title {
+  color: rgb(186, 133, 9);
 }
 
-h2 {
-  color: #000000;
+.subtitle {
+  color: rgb(192, 155, 69);
 }

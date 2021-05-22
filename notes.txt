@@ -1,4 +1,4 @@
-Sudo Selector:
+Pseudo Selector:
   -xx:last-child selection le dernier fils
   du pere de xx li:last-child selection le dernier fils 
   du ul pere de li (inversement pour first-child)
@@ -11,9 +11,9 @@ Sudo Selector:
   parent, li:only-child selection tout les li dans les liste 
   ne contenant qu'un element
 
-  -a:link : { style a appliqué a un lien}
+  -a:link : { style a appliqué a un lien avant sa viste}
 
-  -a:visited : {stule a appliqué a un mien visité}
+  -a:visited : {stule a appliqué a un lien visité}
 
 Advanced selector : 
   -  h2 + a: + selection le premier frere a de tout les h2
@@ -40,3 +40,9 @@ Attribut selecteur:
     les article-subtitle separer (ou non) par l'espace
 
     voir auss |="xxxx" selection avec le tiret
+
+Hex Code explication:
+  #rrggbb
+  Un Hex code de couleur fonctionne de la façon suivante:
+  chaque degit allant de 0 à f, correspond a une intensité de couleur primaire
+  rr rouge gg vert bb bleu 

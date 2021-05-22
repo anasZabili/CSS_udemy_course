@@ -1,72 +1,7 @@
-h2:hover {
-  color: red;
+h1 {
+  color: #ff0000;
 }
 
-/* .about-me,
-.information {
-  color: green;
-}
-
-#about-me {
-  color: orange;
-} */
-
-/* li:first-child {
-  color: steelblue;
-}
-li:last-child {
-  color: pink;
-}
-li:nth-child(2) {
-  color: purple;
-}
-
-li:only-child {
-  color: grey;
-} */
-
-/* #google-link:link {
-  color: black;
-}
-
-#google-link:visited {
-  color: red;
-} */
-
-/* + selection le premier frere a de tout les h2 */
-h2 + a {
-  color: red;
-}
-/* ~ selection tout les frere button de textarea */
-textarea ~ button {
-  color: red;
-}
-
-/* > selection tout les li fils direct de ul */
-ul > li {
-  color: cyan;
-}
-
-/* selection tout les li fils (direct ou indirect de ul) */
-/* ul li {
-  color: green;
-} */
-
-/* Attribut selector */
-h2[class="subtitle"] {
-  color: orange;
-}
-
-/* toute les image dont l'attribut commence par le pastterne */
-img[sr^="../"] {
-  border: 10px solid black;
-}
-
-/* toute les image dont l'attribut termine par le pastterne */
-img[src*=".jpg"] {
-  border: 10px solid green;
-}
-
-h2[class~="article-subtitle"] {
-  background: green;
+h2 {
+  color: #000000;
 }

@@ -1,0 +1,42 @@
+Sudo Selector:
+  -xx:last-child selection le dernier fils
+  du pere de xx li:last-child selection le dernier fils 
+  du ul pere de li (inversement pour first-child)
+
+  -xx:nth-child(n) selection le n ème fils
+  du pere de xx li:nth-child(n) selection le n ème fils 
+  du ul pere de li 
+
+  -xx:only-child selection tout les element fils unique de leur
+  parent, li:only-child selection tout les li dans les liste 
+  ne contenant qu'un element
+
+  -a:link : { style a appliqué a un lien}
+
+  -a:visited : {stule a appliqué a un mien visité}
+
+Advanced selector : 
+  -  h2 + a: + selection le premier frere a de tout les h2
+  - textarea ~ button: ~ selection tout les frere button de textarea
+  - ul > li:  > selection tout les li fils direct de ul
+  - ul li: selection tout les li fils (direct ou indirect) de ul 
+
+Attribut selecteur:
+  les selecteur d'attribut servent a selectionner des elements
+  qui possede certain attribut html
+
+  - h2[class=subtitle]: selection tout les h2 possedant l'attribut class
+    égale a subtitle
+  - img[src^="../"]: selection tout les image dont la source commence par la
+    chaine de caractere "../" ce patern matching est fait grace a la presence de
+    l'élément ^
+  -img[src$=".jpg"]: selection tout les image dont la source termine par la
+    chaine de caractere ".jpg" ce patern matching est fait grace a la presence de
+    l'élément $
+  -img[src*=".jpg"]: selection tout les image dont la source contient la
+    chaine de caractere ".jpg" ce patern matching est fait grace a la presence de
+    l'élément *
+  -h2[class~="article-subtitle"]: ~ est le withspace selector, il selection tout
+    les article-subtitle separer (ou non) par l'espace
+
+    voir auss |="xxxx" selection avec le tiret

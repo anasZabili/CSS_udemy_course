@@ -46,3 +46,14 @@ Hex Code explication:
   Un Hex code de couleur fonctionne de la façon suivante:
   chaque degit allant de 0 à f, correspond a une intensité de couleur primaire
   rr rouge gg vert bb bleu 
+
+Background: 
+  -background: url("xxx") = set une background image 
+  -background-repeat: no-repeat = empecher la repetition de limage sans combler
+    le container
+  -background-size: heigthpx widthpx; = specifie la taille de notre background
+    image en resizan l'image (souvent une mauvaise pratique qui deforme l'image) 
+  -background-size: cover; = force notre image a prendre toute la taille de son 
+    container en denaturant les proportion de limage
+  -background-size: contain; = resize notre image sans denaturer les proportion
+    pour qu'il occupe au mieux lespace de son container

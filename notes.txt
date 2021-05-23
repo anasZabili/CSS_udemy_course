@@ -57,3 +57,24 @@ Background:
     container en denaturant les proportion de limage
   -background-size: contain; = resize notre image sans denaturer les proportion
     pour qu'il occupe au mieux lespace de son container
+
+Gradients: 
+  - background: linear-gradient(
+    to top right,
+    rgba(94, 255, 126, 1),
+    rgba(94, 255, 126, 0)
+  ); 
+    = gradient lineaire, le premer parametre est le point d'arrivé de notre 
+    gradient
+  -background: linear-gradient(
+    160deg,
+    rgba(94, 255, 126, 1),
+    rgba(94, 255, 126, 0)
+  ); = la direction de fin du gradiant peut etre specifé en degré
+    pour ce faire imaginons un cercle au milieu du container, puis langle choisi
+    sur ce cercle sera direction de fin du gradiant
+  - background: radial-gradient(circle, red 2%, blue 47%, green 55%);
+    = un gradiant en cercle (la valeur par default est elipse)
+    on specifie chaque pourcentage de repartition des couleur, la list des couleur
+    doit être ordonné dans l'ordre croissant le plus petit pourcentage doit être
+    placé en tete de liste et le plus grand en fin de liste

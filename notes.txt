@@ -78,3 +78,50 @@ Gradients:
     on specifie chaque pourcentage de repartition des couleur, la list des couleur
     doit être ordonné dans l'ordre croissant le plus petit pourcentage doit être
     placé en tete de liste et le plus grand en fin de liste
+
+  Uniter de taille:
+    Absolue:
+     px: taille standard relative sadapte a la resolution de lecran
+      cm, mm
+
+    Relative: 
+      vw: View Widht est une unité relative 100vw = 100% de la largeur de lecran
+        disponnible, pas la largeur du parent mais de lecran
+      vh: View Height est une unité relative 100vh = 100% de la hauteur de lecran
+        disponnible, pas la hauteur du parent mais de lecran
+      em: 1 em = une taille de font size standard (unité absolue), ce base sur la taille standard
+        des lettres, ainsi 2em double la taille d'un taexte, tres cool car
+        cette unité s'adapte au different media telephone, ordi etc, pour une taille
+        de texte on privilegie TOUJOURS cette unité plutot que px 
+  
+  Text and Font:
+    Le texte traite tout ce qui a un rapport seulement avec le text (color etc)
+    La font traite ce qui a un rapport avec la font (size etc)
+
+    text-decoration: underline/line-through/overline
+    text-transform: uppercase/lowercase/capitalize (tres interessant met juste 
+      la premiere lette en majuscule)
+    text-align: gere l'alignement du text au sein de son container
+      justify/center/left/right
+
+    font-size: 1.15em;
+    font-weight: bold/[100-900];
+    font-style: italic;
+
+    Font-family: precise la type de police (serif, sans-serif, monospace) ou 
+      le nom de la famille (calibri, Time Neww Roman)
+      Pour set une font familly les schema a suivre :
+          font-family: "First Font", seconde font;
+          font-family: "Calibri", sans-serif;
+          ici on specifie une font a calibri et si calibri nest pas disponnible
+          alors on set a sans-serif, toujours specifier une font standard a tout 
+          les navigateur comme derniere alternative car si, on specifie une font, 
+          qui nest pas disponnible si un navigateur on souhaite toujours pouvoir,
+          controller le style de la font
+
+      importer une font: on selectionne un font sur https://fonts.google.com/, puis 
+      une fois notre fotn chosii on cherche a mettre le moins de variant possibles
+      car plus on aura de variant de font (ex bold 800, bold 900), plus le 
+      chargement de notre font par l'application sera lente
+
+

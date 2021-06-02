@@ -124,4 +124,21 @@ Gradients:
       car plus on aura de variant de font (ex bold 800, bold 900), plus le 
       chargement de notre font par l'application sera lente
 
+Layout: 
+  Border: Pour set les bordure d'une box la proproété border permet de tout specifier
+    border: size style color = size px, style solid/dashed ..., color rgb()
+  Padding/margin: padding: top right bottom left
 
+  Float Display:
+    display block,: un block se comporte comme une boite occupant par defaut tout
+      la largeurn disponnible auquel on peut specifier une hauteur une largeur
+      exemple : div, p, form ....
+    display inline: un inline est exactement un text ainsi il n'occupe pas necessairement
+      toute la largeur disponnible par consequent les element de type inline peut 
+      etre combiné sur une seul ligne 
+      exemple: span, a ...
+    display inline-block: ce comporte comme un bloc au sein d'un flux de text
+    display: none: retire lelement de la page, tres utile pour faire un site interactif
+      notamene ten y ajoutant du js, pour par exemple faire des menu deroulant etc
+
+    float: right, left

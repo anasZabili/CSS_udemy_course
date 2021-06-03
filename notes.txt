@@ -142,3 +142,76 @@ Layout:
       notamene ten y ajoutant du js, pour par exemple faire des menu deroulant etc
 
     float: right, left
+
+FlexBox:
+
+  Pour creer un flex container on chercher lelement parent de notre flex zone
+  puis on applique la props display: flex (exactement comme un <Grid container>)
+  
+  flex-direction: row/column = indique a notre container la direction dans laquel
+    il va render les item qu'il contient row et ligne de gauche a droite
+    (ex A B C D),
+    column = colonne de haut en bas 
+    (ex: 
+      A
+      B
+      C
+      D
+    )
+    row-reverse: ligne de droite a gauche (ex: D C B A)
+    column-reverse: colonne de bas en haut
+    (ex: 
+      D 
+      C 
+      B 
+      A
+    )
+  
+  flex-wrap: wrap/wrap-reverse/nowrap = flex-wrap: wrap, permet de specifier, le 
+    comportement a adapter en cas d'overflow delement si "wrap" est specifier, 
+    le flex container renvoie a la ligne suivante les element overflow, 
+    "nowrap" par default entasse simplement les composant
+    "nowrap" = affichage sur une seul lignes
+    "wrap" = affichage sur plusieur lignes
+
+  justify-content: flex-start/flex-end/center = aligne (horizontalement) les item dans un 
+    container display flex
+    space-between: remplie tout le container en mettabt de lespace entre les element
+    space-arround: remplie tout le container en mettabt de lespace autour des element
+
+  align-items: center/flex-start/flex-end: aligne verticalement
+    stretch: valeur par def&ault etire les item sur toute le hauteur
+    baseline: aligne sur la meme ligne tout les items
+
+  order: {order} (la valeur par default est 0), order est une props importante permettant de specifier la 
+    position d'un element sans avoir a modifier sa position dans le html,
+    un element order:1 apparaitera avant un element order: 2, si collision le 
+    premeier element de l'html est pris en compte 
+    cette propriete prend encore plus de sens si le style est modifier avec du 
+    javascript, cela va permettre de boyger les element sans modifier le htmlx
+
+  flex-basis: xxpx defini la taille minimal d'un item dans un flex container 
+  
+  flex-grow: {priority} (la valeur par default est 0) props importante, elle permet a chaque flex item, 
+    de prendre une certain proportion de lespace restant disponnible, 
+    ainsi si apres avoir rendu tout les item si le container n'est pas rempli 
+    lespace suplement sera distribué au item proportionnelement a leur priorité
+    un flew-grow: 2 aura 2 fois plus dextra quun flex-grow: 1, il est necessaire
+    de toujours definir cette propriete sur toutj les elemtn du container
+    car dans le cas contraire, si des element nont pas de flex grow il ne prendrons
+    aucun extra space, et seulement les seul element  prendrons de lextra space
+
+  flex-shrink: {priority } (la valeur par default est 0), props tout aussi importante
+     que flex-gorw, elle defini l'espace pris a chaque item lors d'un retreciseement
+     ex un element de priority 1 perdra 2 fois moins despace lors d'un retrecissement
+     qu'un element de prio 2 un element de prio "0" ne retrecie jamais
+     astuce: un element de prio X ce reduit X fois plus vite qu'un element de prio 1
+
+  flex: [flex-grow] [flex-shrink] [flex-basis] = cette priopriete est un 
+    shortcut, pour deifni les 3 propriete flex
+
+  align-self: center/flex-start/flex-end est un props a appliquer directemenet sur un item recouvrant
+    la props align item de son container, elle permet d'appliquer un alignement 
+    vertical particulier a un item sans prendre en compte l'alignement imposé
+    par le flex container
+    

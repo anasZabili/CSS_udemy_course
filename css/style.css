@@ -40,3 +40,21 @@ body {
   /* float: right; */
   /* display: inline-block; */
 }
+
+.container-item {
+  background: green;
+  width: 70px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px;
+}
+
+.container {
+  background: white;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}

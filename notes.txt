@@ -143,6 +143,7 @@ Layout:
 
     float: right, left
 
+IMPORTANT
 FlexBox:
 
   Pour creer un flex container on chercher lelement parent de notre flex zone
@@ -214,4 +215,60 @@ FlexBox:
     la props align item de son container, elle permet d'appliquer un alignement 
     vertical particulier a un item sans prendre en compte l'alignement imposé
     par le flex container
+
+
+  IMPORTANT
+  Grid:
+    Pour activier le rendu grid sur un container, 
+    display: grid,
+    apres declarer ça sur le container un va specifier le schema que notre grille
+    doit adopter: 
+    grid-template-columns: 30% 15% 30%;
+      prend en parametre une suite de taille ici on indique que notre grille
+      possede 3 colonne de taille 30 15 30
+    grid-template-rows: 30% 70%;
+      prend en param une suite de taille ici on indique que notre grille aura deux 
+      ligne de taille 30% de la hauteur l1 et 70% de la hauteur l2
+    auto: grid-template-columns: auto auto auto; est une valeur tres souvent utiliser
+      elle permet de repartir equitablement lespace entre nos 3 element
+        grid-template-rows: auto auto auto;
+
+
+
+    justify-content: start/end/center/space-arround/space-evenly
+      // c'est alignement override souvent les alignement specifer dans les grid
+      // templatex  
+    align-content: space-between/space-arround/end/start/center  fonction comme 
+    align item des flex box mais pour les grid
+
+    column-gap: xxpx; specifie lespace entre chaque colonne, typiqueemnt similaire 
+      a spacing de material ui
+    
+    row-gap: 100px; specifie lespace entre chaque ligne
+
+    gap: [row-gap] [column-gap] = cette propriete est un shortcut, pour specifie 
+      lespace entre les ligne et les colone
+
+    Grid item:  
+      grid-column: 1 / 3 (shortcut {grid-column-start column / grid-column-end column}); 
+        , est une propriete appliquer sur un element dans un 
+        grid container, il permet de specifier le nombre de colone qu'un element 
+        va occuper sur ça ligne ici, l'item commence colonne 1 et termine debut
+        de la colonne 3
+      grid-row: 1 / 3 (shortcut {grid-row-start row / grid-row-end row}); 
+        , est une propriete appliquer sur un element dans un 
+        grid container, il permet de specifier le nombre de ligne qu'un element 
+        va occuper, l'item commence ligne 1 et termine debut
+        de la ligne 3
+      
+      span: notation plus correment utiliser pour les props grid-row et grid-column
+        grid-column: 1 / span 2, indique commence ligne 1 et etend toi sur 2 
+        ligne suplementaire, ce qui fait de cette notation un schema plus lisible
+        grid-row: 1 / span 2
+
+      grid-area: grid-row-start/ grid-column-start/ grid-row-end/ grid-column-end    
+        est une combinaison de grid-column et grid-row
+        toujours privilegier lutilisation de grid-area
+
+
     

@@ -271,4 +271,17 @@ FlexBox:
         toujours privilegier lutilisation de grid-area
 
 
+  Animation:
+    
+    Transition:
+      transition: [property] [duration (s | ms)] [transition style] [delay (for the animation to start)]
+      exemple :     transition: background, padding 0.3s linear 0.1s;
+
+        ici je fait en sorte de poser une transition sur le changeement du background 
+        colro apres un hover en adoptant le style ease in out
+      
+
+
+
+
     

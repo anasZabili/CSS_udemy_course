@@ -82,3 +82,41 @@ body {
   color: black;
   font-size: 1.5em;
 }
+
+form {
+  display: grid;
+  grid-template-columns: 20%;
+  grid-template-rows: auto, auto, auto;
+  justify-content: start;
+  align-content: space-arround;
+  gap: 1em 1em;
+}
+
+.form-input {
+  border: 2px solid rgba(0, 20, 29, 0.733);
+  border-radius: 2px;
+  height: 3em;
+}
+
+textarea {
+  border: 2px solid rgba(0, 20, 29, 0.733);
+  border-radius: 2px;
+}
+
+.submit-button {
+  background: rgb(54, 129, 228);
+  color: white;
+  border-radius: 2px;
+  width: 60%;
+  margin: 1em;
+  font-size: 0.8em;
+  border: none;
+  padding: 0.3em 1em;
+  transition: background, padding 0.3s linear 0.1s;
+}
+
+.submit-button:hover {
+  background: rgb(94, 169, 268);
+  padding: 0.6em 2em;
+  /* color: lightgrey; */
+}

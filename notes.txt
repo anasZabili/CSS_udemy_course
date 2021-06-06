@@ -279,6 +279,96 @@ FlexBox:
 
         ici je fait en sorte de poser une transition sur le changeement du background 
         colro apres un hover en adoptant le style ease in out
+
+    Animation:
+      une animation ressemble a une transition mais c'est une fonction reutilisable
+      ainsi pour faire une transition du type changer le background color, 
+      de bleu a rouge, de 5 element, les transition devrons etre deifni sur les 
+      5element, la ou les animation permet de definir une seul animation,
+      appliqué sur 5 elements, de plus une animation peut être declanché, 
+      au bout d'un delemnt au montage de la page sans attendre devent particulier
+
+      creer une animation:
+        une animation est composer de au moins deux "key-frame" une start et 
+        une end
+        @keyframes red-to-black {
+          from {
+            background: red;
+          }
+          to {
+            background: black;
+          }
+        }
+        ici une basique animation allant du rouge au noir est creer
+
+        Creation danimation a plus de 2 etat de transition
+
+        @keyframes red-to-black-to-blue {
+          0% {
+            background: red;
+            transform: translate(0px, 0px);
+          }
+          50% {
+            background: black;
+            transform: translate(10px, 10px);
+          }
+          100% {
+            background: blue;
+            transform: translate(20px, 20px);
+          }
+        }
+        ici on defini nos changement en fonction du pourcentage d'avancement de notre 
+        animation, 
+
+        Ajout de notre animation :
+          Pour ajouter notre animation on selectionne lelement concerné auquel on ajout 
+          c'est porps
+            animation-name: red-to-black-to-blue;
+              = doit être le nom exacte de notre keyframes
+            animation-duration: 4s;
+              = le temps que notre animation doit duré (par default 0)
+            animation-timing-function: linear;
+              = le style de course que lanimation adopte (linear, ease, ease-in, ease-out etc)
+            animation-delay: 0.2s;
+              = le temps que l'animation prend avant de start (peut être une value negatif)
+            animation-iteration-count: infinite;
+              = le nombre de fois que notre animation sera joué, (in chiffre ou infinite)
+            animation-direction: alternate;
+              = le facon dont le differente etape de notre animation seront executé
+                alternate: une boucle est fait de 0% a 100% a 0% etc...
+                alternate-reverse: une boucle inversé est faite de 0% a 100% a 0% etc..
+                normal: single time de 0% a 100%
+                reverse: single time de 100% a 0%
+
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+              est un shortcut qui prend en compte tout les propriete
+
+
+
+
+    Transformation function:
+      transform: est une propriete mettant a disposition un ensemble de fonction
+      permettant d'appliquer des transformation sur lelement selectionné
+      (des rotation, translatation, deformation etc..)
+
+      transformation physique: 
+
+        translate(Xshift, Yshift); fonction permettant la translation 2d
+          ex: translate(10px, 20px)
+        scale([multiplicateur]); fonction qui permet d'agrandire ou retrcire un elemnt
+          en augmentant ou reduisant le padding
+          ex: scale(2.5) multiplie la taille du composant par 2.5
+
+      rotation:
+        rotate(Xdeg): permet deffectuer une roation sur lelement 
+
+        skewX(Xdef); permet d'operer une distortion en X sur un element
+        skewY(Ydeg); permet d'operer une distortion en Y sur un element
+
+        matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+          est une fonction regroupant tout les changement que nous avant cité
+
+
       
 
 

@@ -106,17 +106,65 @@ textarea {
 .submit-button {
   background: rgb(54, 129, 228);
   color: white;
-  border-radius: 2px;
+  border-radius: 10px;
   width: 60%;
   margin: 1em;
   font-size: 0.8em;
   border: none;
   padding: 0.3em 1em;
-  transition: background, padding 0.3s linear 0.1s;
+  transition: all 1s linear 0.2s;
+  /* -moz-transition: all 1s linear 0.2s;
+  -webkit-transition: all 1s linear 0.2s;
+  -o-transition: all 1s linear 0.2s;
+  transform: translate(50px, 30px);
+  -moz-transform: translate(50px, 30px);
+  -webkit-transform: translate(50px, 30px);
+  -o-transform: translate(50px, 30px);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5); */
+  /* transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg); */
+  /* transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -o-transform: skewX(45deg); */
+  transform: matrix(1, 0.45, 0.45, 1, 100, 20);
+  -moz-transform: matrix(1, 0.45, 0.45, 1, 100, 20);
+  -webkit-transform: matrix(1, 0.45, 0.45, 1, 100, 20);
+  -o-transform: matrix(1, 0.45, 0.45, 1, 100, 20);
 }
 
 .submit-button:hover {
   background: rgb(94, 169, 268);
   padding: 0.6em 2em;
-  /* color: lightgrey; */
+  color: lightgrey;
+}
+
+#about-me {
+  /* animation-name: red-to-black-to-blue;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; */
+  animation: red-to-black-to-blue 4s linear 0.2s infinite alternate-reverse;
+}
+
+@keyframes red-to-black-to-blue {
+  0% {
+    background: red;
+    transform: translate(0px, 0px);
+  }
+  50% {
+    background: black;
+    transform: translate(10px, 10px);
+  }
+  100% {
+    background: blue;
+    transform: translate(20px, 20px);
+  }
 }

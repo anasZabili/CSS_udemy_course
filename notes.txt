@@ -16,7 +16,8 @@ Pseudo Selector:
   -a:visited : {stule a appliqué a un lien visité}
 
 Advanced selector : 
-  -  h2 + a: + selection le premier frere a de tout les h2
+  -  h2 + a: + selection le premier frere a de tout les h2, autrement dis 
+      selection tout les a qui son précédé d'un h2
   - textarea ~ button: ~ selection tout les frere button de textarea
   - ul > li:  > selection tout les li fils direct de ul
   - ul li: selection tout les li fils (direct ou indirect) de ul 
